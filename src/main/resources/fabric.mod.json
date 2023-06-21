@@ -3,13 +3,14 @@
   "id": "songplayer",
   "version": "${version}",
 
-  "name": "Song Player",
-  "description": "A mod for building and playing noteblock songs in Minecraft",
+  "name": "Illager Music",
+  "description": "A mod for building and playing noteblock songs in Minecraft, modified by IllagerCaptain",
   "authors": [
-    "hhhzzzsss"
+    "hhhzzzsss",
+    "IllagerCaptain"
   ],
   "contact": {
-    "sources": "https://github.com/hhhzzzsss/SongPlayer"
+    "sources": "https://github.com/IllagerCaptain/Illager-Music"
   },
 
   "license": "MIT",
