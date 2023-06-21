@@ -267,7 +267,7 @@ public class SongHandler {
             setSurvivalIfNeeded();
             stage.sendMovementPacketToStagePosition();
             SongPlayer.addChatMessage("§6Now playing §3" + currentSong.name);
-            sendChatCommand("me &cis now playing &8♪ &o" + currentSong.name + "&8 ♪&c at &n/warp illager_music&c!);
+            sendChatCommand("me &cis now playing &8♪ &o" + currentSong.name + "&8 ♪&c at &n/warp illager_music&c!");
         }
     }
     private void setBuildProgressDisplay() {
