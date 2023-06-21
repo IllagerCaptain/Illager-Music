@@ -267,8 +267,8 @@ public class SongHandler {
             setSurvivalIfNeeded();
             stage.sendMovementPacketToStagePosition();
             SongPlayer.addChatMessage("§6Now playing §3" + currentSong.name);
-            SongPlayer.MC.getNetworkHandler().sendCommand("nick &c&lIllagerCaptain");
-            SongPlayer.MC.getNetworkHandler().sendCommand("me &c&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&c&l at &n&l/warp illager_music&c&l!");
+            SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
+            SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &n&l/warp illager_music&b&l!");
             SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff0000 #0000ff IllagerCaptain");
         }
     }
