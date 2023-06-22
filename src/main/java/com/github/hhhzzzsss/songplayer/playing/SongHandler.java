@@ -283,6 +283,10 @@ public class SongHandler {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ffaa00 #00aa00 IllagerCaptain");
+            } else {
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff0000 #0000ff IllagerCaptain");
             }
         }
     }
