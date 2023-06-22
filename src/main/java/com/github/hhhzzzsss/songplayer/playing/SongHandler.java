@@ -283,10 +283,12 @@ public class SongHandler {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ffaa00 #00aa00 IllagerCaptain");
+            }
+            if (((((currentSong.notes.size() * 1000.0) / currentSong.length) / 600) * 115) < 115) {
+                        SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " " + Math.round(((currentSong.notes.size() * 1000.0) / currentSong.length) / 600) * 115));
             } else {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff0000 #0000ff IllagerCaptain");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " 115"));
+                        SongPlayer.addChatMessage("§cWarning: §4Song is deadly.");
             }
         }
     }
