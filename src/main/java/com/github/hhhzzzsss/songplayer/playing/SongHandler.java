@@ -274,7 +274,7 @@ public class SongHandler {
             } else if (currentSong.name == "test_song") {
                         SongPlayer.addChatMessage("§cNot sending announcement: Song is §3" + currentSong.name);
             } else if (currentPlaylist == null) {
-                        SongPlayer.addChatMessage("§cNot sending announcement: Playlist is null)");
+                        SongPlayer.addChatMessage("§cNot sending announcement: Playlist is null");
             } else {
                         SongPlayer.addChatMessage("§cNot sending announcement: Unknown)");
             }
