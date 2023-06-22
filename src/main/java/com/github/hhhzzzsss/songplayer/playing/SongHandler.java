@@ -271,24 +271,18 @@ public class SongHandler {
             setSurvivalIfNeeded();
             stage.sendMovementPacketToStagePosition();
             SongPlayer.addChatMessage("§6Now playing §3" + currentSong.name);
-            if (currentSong.name != "test_song" && currentPlaylist != null && currentPlaylist.name == "Default") {
+            if (currentPlaylist.name == "Default") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff0000 #0000ff IllagerCaptain");
-            } else if (currentSong.name != "test_song" && currentPlaylist != null && currentPlaylist.name == "Christmas") {
+            } else if (currentPlaylist.name == "Christmas") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &c&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &2&lis &c&lnow &2&lplaying &6♪ &o&l" + currentSong.name + "&6 ♪&c&l &2&lat &9&l/warp illager_music&c&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff5555 #00aa00 IllagerCaptain");
-            } else if (currentSong.name != "test_song" && currentPlaylist != null && currentPlaylist.name == "Halloween") {
+            } else if (currentPlaylist.name == "Halloween") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ffaa00 #00aa00 IllagerCaptain");
-            } else if (currentPlaylist == null) {
-                        SongPlayer.addChatMessage("§cNot sending announcement: §4Playlist is null");
-            } else if (currentSong.name == "test_song") {
-                        SongPlayer.addChatMessage("§cNot sending announcement: §4Song is " + currentSong.name);
-            } else {
-                        SongPlayer.addChatMessage("§cNot sending announcement: §4Playlist is not Default, Christmas, or Halloween");
             }
         }
     }
