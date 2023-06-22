@@ -271,15 +271,15 @@ public class SongHandler {
             setSurvivalIfNeeded();
             stage.sendMovementPacketToStagePosition();
             SongPlayer.addChatMessage("§6Now playing §3" + currentSong.name);
-            if (currentPlaylist.name == "Default") {
+            if (currentPlaylist != null && currentPlaylist.name == "Default") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff0000 #0000ff IllagerCaptain");
-            } else if (currentPlaylist.name == "Christmas") {
+            } else if (currentPlaylist != null && currentPlaylist.name == "Christmas") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &c&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &2&lis &c&lnow &2&lplaying &6♪ &o&l" + currentSong.name + "&6 ♪&c&l &2&lat &9&l/warp illager_music&c&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ff5555 #00aa00 IllagerCaptain");
-            } else if (currentPlaylist.name == "Halloween") {
+            } else if (currentPlaylist != null && currentPlaylist.name == "Halloween") {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nick &b&lIllagerCaptain");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickgradient #ffaa00 #00aa00 IllagerCaptain");
