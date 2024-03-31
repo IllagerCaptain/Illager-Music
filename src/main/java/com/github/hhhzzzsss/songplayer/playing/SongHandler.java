@@ -286,7 +286,7 @@ public class SongHandler {
             } else if (currentPlaylist != null) {
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <bold><aqua>IllagerCaptain</aqua></bold>");
                         SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ff0000:#0000ff>IllagerCaptain</gradient>");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ffaa00:#ddd605>IllagerCaptain</gradient>");
             }
             if (Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3) <= 0) {
                         SongPlayer.addChatMessage("§6Not applying haste, as song is slow tempo");
