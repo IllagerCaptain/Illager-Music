@@ -272,30 +272,30 @@ public class SongHandler {
             stage.sendMovementPacketToStagePosition();
             SongPlayer.addChatMessage("§6Now playing §3" + currentSong.name);
             if (currentPlaylist != null && currentPlaylist.name == "Default") {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <bold><aqua>IllagerCaptain</aqua></bold>");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <dark_purple>IllagerCaptain</dark_purple>");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("me is now playing ♪ " + currentSong.name + " ♪ at /warp illager_music!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ff0000:#0000ff>IllagerCaptain</gradient>");
             } else if (currentPlaylist != null && currentPlaylist.name == "Christmas") {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <bold><red>IllagerCaptain</red></bold>");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("me &2&lis &c&lnow &2&lplaying &6♪ &o&l" + currentSong.name + "&6 ♪&c&l &2&lat &9&l/warp illager_music&c&l!");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <dark_purple>IllagerCaptain</dark_purple>");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("me is now playing ♪ " + currentSong.name + " ♪ at /warp illager_music!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ff5555:#00aa00>IllagerCaptain</gradient>");
             } else if (currentPlaylist != null && currentPlaylist.name == "Halloween") {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <bold><aqua>IllagerCaptain</aqua></bold>");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <dark_purple>IllagerCaptain</dark_purple>");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("me is now playing ♪ " + currentSong.name + " ♪ at /warp illager_music!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ffaa00:#00aa00>IllagerCaptain</gradient>");
             } else if (currentPlaylist != null) {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <bold><aqua>IllagerCaptain</aqua></bold>");
-                        SongPlayer.MC.getNetworkHandler().sendCommand("me &b&lis now playing &6♪ &o&l" + currentSong.name + "&6 ♪&b&l at &9&l/warp illager_music&b&l!");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <dark_purple>IllagerCaptain</dark_purple>");
+                        SongPlayer.MC.getNetworkHandler().sendCommand("me is now playing ♪ " + currentSong.name + " ♪ at /warp illager_music!");
                         SongPlayer.MC.getNetworkHandler().sendCommand("nickmm <gradient:#ffaa00:#ddd605>IllagerCaptain</gradient>");
             }
-            if (Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3) <= 0) {
-                        SongPlayer.addChatMessage("§6Not applying haste, as song is slow tempo");
-            } else if (Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3) < 3) {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " " + Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3));
-            } else {
-                        SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " 3");
-                        SongPlayer.addChatMessage("§cWarning: §4Song is deadly.");
-            }
+            //if (Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3) <= 0) {
+            //            SongPlayer.addChatMessage("§6Not applying haste, as song is slow tempo");
+            //} else if (Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3) < 3) {
+            //            SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " " + Math.round((1 - (1 / ((currentSong.notes.size() * 1000.0) / (currentSong.length * 10)))) * 3));
+            //} else {
+            //            SongPlayer.MC.getNetworkHandler().sendCommand("potion add FAST_DIGGING " + Math.round(currentSong.length / 50) + " 3");
+            //            SongPlayer.addChatMessage("§cWarning: §4Song is deadly.");
+            //}
         }
     }
     private void setBuildProgressDisplay() {
